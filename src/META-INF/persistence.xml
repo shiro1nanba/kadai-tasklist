@@ -8,7 +8,6 @@
 			<property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost/tasklist?useSSL=false&amp;useUnicode=true&amp;characterEncoding=utf8"/>
 			<property name="javax.persistence.jdbc.user" value="goduser"/>
 			<property name="javax.persistence.jdbc.password" value="godpass"/>
-			<property name="javax.persistence.schema-generation.create-source" value="script-then-metadata"/>
 			<property name="javax.persistence.schema-generation.database.action" value="create"/>
 			<property name="hibernate.dialect" value="org.hibernate.dialect.MySQL5Dialect"/>
 			<property name="hibernate.show_sql" value="true"/>

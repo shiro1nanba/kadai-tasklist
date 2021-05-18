@@ -25,7 +25,6 @@ public class UpdateServlet extends HttpServlet {
      */
     public UpdateServlet() {
         super();
-
     }
 
     /**
@@ -36,7 +35,7 @@ public class UpdateServlet extends HttpServlet {
         if(_token != null && _token.equals(request.getSession().getId())) {
             EntityManager em = DBUtil.createEntityManager();
 
-            Task t = em.find(Task.class, (Integer)(request.getSession().getAttribute("id")));
+            Task t = em.find(Task.class, (Integer)(request.getSession().getAttribute("task_id")));
 
             String content = request.getParameter("content");
             t.setContent(content);
@@ -53,5 +52,4 @@ public class UpdateServlet extends HttpServlet {
             response.sendRedirect(request.getContextPath() + "/index");
         }
     }
-
 }
